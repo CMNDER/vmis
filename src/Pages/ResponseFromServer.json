@@ -1,0 +1,82 @@
+// Get Request for getting stored vaccine
+{
+    "vaccineName":"name",
+    "vaccineShortName":"shortName",
+    "VaccineDescription"
+}
+// POST request for putting vaccine Stock in Database 
+{
+    "vaccineName":"name",
+    "vaccineShortName":"shortName",
+    "VaccineDescription":"Description"
+}
+// POST request for putting vaccine stock in Database 
+{
+    "vaccineName":"name",
+    "vaccineName": "vaccineValue",
+    "expirationDate": "expirationDateValue",
+    "quantity": "quantityValue",
+    "batch": "batchNumberValue",
+    "numberOfDose": "numberOfDoseValue",
+    "pcv": "pcvValue"
+
+}
+// Get request for requests made in Distribution menu
+{
+    "fromOrgUnitId":"orgUnitId",
+    "fromOrgUnitName":"orgUnitName",
+    "date":"date",
+    "vaccineName":"name",
+    "quantity":"quantity",
+    "averageMonthlyConsumption":"value",
+}
+// ********************************************************************
+// POST request for requests
+// distribution request
+// POST recent order  by date
+
+[
+    {
+      "distributionOrigin": "From Gahini Hospital",
+      "requestOrigin": "hDsNksdRjyK",
+      "responce": [
+        {
+          "itemName": "BCG",
+          "itemQuatity": "21"
+        },
+        {
+          "itemName": "DMR",
+          "itemQuatity": "32"
+        },
+        {
+          "itemName": "IPV",
+          "itemQuatity": "56"
+        }
+      ]
+    }
+  ]
+// Get request
+{
+  "requestOrigin": "hDsNksdRjyK",
+  "requestDate":"date",
+  "request": [
+    {
+      "itemName": "BCG",
+      "AverageMonthlyConsumption":43,
+      "itemQuatity": 21
+    },
+    {
+      "itemName": "DMR",
+      "AverageMonthlyConsumption":43,
+      "itemQuatity": 32
+    },
+    {
+      "itemName": "IPV",
+      "AverageMonthlyConsumption":43,
+      "itemQuatity": 56
+    }
+  ]
+}
+
+// Returns 
+// Get
